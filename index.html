@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Extremo Sur</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Turismo Extremo Sur</h1>
+
+            <ul>
+                <li><a href="#quienes">Nuestros Panoramas</a></li>
+                <li><a href="#servicios">Nuestros servicios</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <div>
+                <h2>Turismo Extremo Sur</h2>
+                <p>
+                    Conoce los distintos panoramas que Turismo Extremo Sur te puede ofrecer
+                </p>
+            </div>
+        </section>
+
+        <section id="quienes">
+            <h2>Nuestros Panoramas</h2>
+
+            <p class="texto-centro">
+                Somos una empresa dedicada al recorrido de lugares turisticos en caballo en distintos puntos del sur
+            </p>
+
+            <div id="contenedorOrganizaciones" class="contenedor-cards"></div>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <p class="texto-centro">
+                Selecciona algun panorama de su agrado
+            </p>
+
+            <div class="selector-box">
+                <label for="selectorOrganizacion">Selecciona una organización:</label>
+
+                <select id="selectorOrganizacion">
+                    <option value="">-- Elegir organización --</option>
+                </select>
+            </div>
+
+            <div id="infoOrganizacion" class="info-organizacion"></div>
+
+            <div id="lugares" class="contenedor-cards"></div>
+
+            <div class="mapa">
+                <h3>Mapa de nuestro area de servicio</h3>
+
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76583.76614071846!2d-70.9886673254749!3d-53.14173886239933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc52ca58b309cc21%3A0xfa616a8b65456916!2sPunta%20Arenas%2C%20Magallanes%20y%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses!2scl!4v1778077390861!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    title="Mapa de Punta Arenas">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+
+            <p class="texto-centro">
+                Complete el formulario para poder agendar una hora y contactarnos contigo,
+                
+            </p>
+
+            <form id="formularioContacto">
+                <div id="mensajeExito">Formulario enviado correctamente.</div>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                <p class="error" id="errorNombre"></p>
+
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" placeholder="Ejemplo: 12345678">
+                <p class="error" id="errorCelular"></p>
+
+                
+                <label for="pais">País</label>
+                <input type="text" id="pais" placeholder="Ingresa tu país (en caso de venir del extranjero)">
+                <p class="error" id="errorPais"></p>
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" placeholder="Ingresa tu ciudad">
+                <p class="error" id="errorCiudad"></p>
+
+                <label for="consulta">Consulta</label>
+                <textarea id="consulta" placeholder="Escribe tu consulta"></textarea>
+                <p class="error" id="errorConsulta"></p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Turismo Extremo Sur | Examen Front End unidad 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
