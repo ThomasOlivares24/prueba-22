@@ -22,7 +22,7 @@ const organizaciones = [
     {
         id: "Organizacion 3",
         nombre: "Mirador Zapador Australl",
-        ciudad: "Punta Arewnasasasa",
+        ciudad: "Punta Arenas",
         descripcion: "Un mirador mágico ubicado en punta arenas, ven y no te lo pierdas",
         imagen: "mirador.jpg",
 
